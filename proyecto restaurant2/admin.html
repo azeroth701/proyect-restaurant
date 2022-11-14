@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-400">
-   <p>Hola como esta</p>
+   <h1>Hola como esta</h1>
     <script>
         {
         let person = prompt("Please enter your name");
@@ -22,7 +22,12 @@
         }
         document.write('El usuario es: ' + person + "<br>");
         document.write('El correo es: ' + email + "<br>");
-        document.write('La contraseña es: ' + password);
+        let newPassword = "";
+        for(var i = 0; i< password.length; i++){
+    
+            newPassword += "*";
+        }
+        document.write('La contraseña es: ' + newPassword);
 
       }
     
